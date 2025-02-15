@@ -1,0 +1,35 @@
+[versions]
+agp = "8.5.0"
+koinCore = "4.0.0"
+kotlin = "2.0.21"
+android-minSdk = "24"
+android-compileSdk = "34"
+kotlinxSerializationJson = "1.7.3"
+kotlinxSerializationRuntime = "3.0.0"
+ktorClientCio = "2.3.0"
+ktorClientContentNegotiation = "3.0.0"
+ktorClientDarwin = "2.3.12"
+
+[libraries]
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinCore" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+kotlinx-serialization-runtime = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime", version.ref = "kotlinxSerializationRuntime" }
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorClientDarwin" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorClientCio" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientContentNegotiation" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientDarwin" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktorClientDarwin" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientDarwin" }
+ktor-client-logging-jvm = { module = "io.ktor:ktor-client-logging-jvm", version.ref = "ktorClientDarwin" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktorClientDarwin" }
+ktor-client-plugins = { module = "io.ktor:ktor-client-plugins", version.ref = "ktorClientDarwin" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClientContentNegotiation" }
+ktor-utils-jvm = { module = "io.ktor:ktor-utils-jvm", version.ref = "ktorClientDarwin" }
+ktorSerialization = { group = "io.ktor", name = "ktor-client-serialization", version.ref = "ktorClientDarwin" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+vanniktech-mavenPublish = { id = "com.vanniktech.maven.publish", version = "0.30.0" }
