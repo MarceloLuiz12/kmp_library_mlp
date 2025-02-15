@@ -13,7 +13,7 @@ let package = Package(
       .binaryTarget(
          name: "library",
          url: "https://github.com/MarceloLuiz12/kmp_library_mlp/releases/download/1.0.0/XCFrameworks.zip",
-         checksum: "13edd9ebf3fcff01a977644de4f80c6b1c6d514311b36d56fadb58fd45951a78"
+         checksum: "391dd369abafe60a16a77ab2db1ebbc4a5b71c88f900b8da7dcd9cac74fea8a2"
       )
    ]
 )
