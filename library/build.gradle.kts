@@ -69,10 +69,10 @@ mavenPublishing {
     coordinates(group.toString(), "library", version.toString())
 
     pom {
-        name = "My library"
-        description = "A library."
+        name = "Hvn Library KMP"
+        description = "Biblioteca Kotlin Multiplatform para compartilhar lógica de negócios (use cases) entre aplicativos Android e iOS nativos."
         inceptionYear = "2024"
-        url = "https://github.com/kotlin/multiplatform-library-template/"
+        url = "https://github.com/MarceloLuiz12/kmp_library_mlp"
         licenses {
             license {
                 name = "XXX"
@@ -82,15 +82,13 @@ mavenPublishing {
         }
         developers {
             developer {
-                id = "XXX"
-                name = "YYY"
-                url = "ZZZ"
+                id = "marceloluiz12"
+                name = "Marcelo Luiz Pinheiro"
+                email = "marceloluizpinheiro17@gmail.com"
             }
         }
         scm {
-            url = "XXX"
-            connection = "YYY"
-            developerConnection = "ZZZ"
+            url = "https://github.com/MarceloLuiz12/kmp_library_mlp"
         }
     }
 }
