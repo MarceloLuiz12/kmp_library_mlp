@@ -75,9 +75,8 @@ mavenPublishing {
         url = "https://github.com/MarceloLuiz12/kmp_library_mlp"
         licenses {
             license {
-                name = "XXX"
-                url = "YYY"
-                distribution = "ZZZ"
+                name = "MIT"
+                url = "https://opensource.org/licenses/MIT"
             }
         }
         developers {
