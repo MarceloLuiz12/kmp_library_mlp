@@ -6,6 +6,5 @@ object ProductConstants {
 }
 
 object Core {
-
-    const val BASE_URL = "https://apigatewaygerenciamento-dev.havan.com.br"
+    const val BASE_URL = "apigatewaygerenciamento-dev.havan.com.br"
 }

@@ -1,6 +1,6 @@
 package domain.repositories
 
-import domain.ProductResponse
+import domain.models.ProductResponse
 import kotlinx.coroutines.flow.Flow
 
 interface ProductInterface {

@@ -1,6 +1,6 @@
 package domain.usecases
 
-import domain.ProductResponse
+import domain.models.ProductResponse
 import domain.core.UseCase
 import domain.repositories.ProductInterface
 import kotlinx.coroutines.CoroutineScope

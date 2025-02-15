@@ -3,7 +3,7 @@ package data.repositories
 import data.core.GenericResponse
 import data.core.ProductConstants.GET_PRODUCT_RATING
 import data.core.wrapperGenericResponse
-import domain.ProductResponse
+import domain.models.ProductResponse
 import domain.repositories.ProductInterface
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
