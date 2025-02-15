@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "kmp_library_mlp"
+rootProject.name = "hvn_library_kmp"
 include(":library")
