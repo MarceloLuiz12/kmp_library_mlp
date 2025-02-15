@@ -4,6 +4,7 @@ import data.core.GenericResponse
 import data.core.ProductConstants.GET_PRODUCT_RATING
 import data.core.wrapperGenericResponse
 import domain.models.ProductResponse
+import domain.models.ProductResponseWrapper
 import domain.repositories.ProductInterface
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -14,11 +15,11 @@ import kotlinx.coroutines.flow.flow
 class ProductImpl(
     private val remoteDataSource: HttpClient
 ): ProductInterface{
-    override fun getProductRating(): Flow<ProductResponse> = flow {
+    override fun getProductRating(): Flow<ProductResponseWrapper> = flow {
         emit(
             wrapperGenericResponse {
                 remoteDataSource.get(GET_PRODUCT_RATING)
-                    .body<GenericResponse<ProductResponse>>()
+                    .body<GenericResponse<ProductResponseWrapper>>()
             }
         )
     }
