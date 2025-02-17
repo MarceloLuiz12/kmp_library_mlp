@@ -13,8 +13,8 @@ data class ProductResponseWrapper(
 
 @Serializable
 data class ProductResponse(
-    @SerialName("nomeProduto") val nameProduct: String,
-    @SerialName("sku") val sku: String,
-    @SerialName("dataCompra") val buyDate: String,
-    @SerialName("idVenda") val id: Long
+    @SerialName("nomeProduto") val nameProduct: String? = null,
+    @SerialName("sku") val sku: String? = null,
+    @SerialName("dataCompra") val buyDate: String? = null,
+    @SerialName("idVenda") val id: Long? = null
 )

@@ -9,8 +9,18 @@ import kotlinx.coroutines.flow.Flow
 class GetProductRatingUseCase(
     scope: CoroutineScope,
     private val repository: ProductInterface
-): UseCase<ProductResponseWrapper, String>(scope = scope) {
-    override fun run(params: String?): Flow<ProductResponseWrapper> = repository.getProductRating(
-        token = params.orEmpty()
+) : UseCase<ProductResponseWrapper, GetProductRatingUseCase.Params>(scope = scope) {
+    override fun run(params: Params?): Flow<ProductResponseWrapper> = repository.getProductRating(
+        page = params?.page ?: 0,
+        productName = params?.productName ?: "",
+        dateFilter = params?.dateFilter ?: 0,
+        token = params?.accessToken ?: ""
+    )
+
+    data class Params(
+        val page: Int,
+        val productName: String,
+        val dateFilter: Int,
+        val accessToken: String
     )
 }
