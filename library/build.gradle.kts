@@ -10,8 +10,8 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version "2.0.21"
 }
 
-group = "io.github.marcelo"
-version = "1.0.4"
+group = "com.havan.paladinos.business-logic.kmp"
+version = "1.0.5"
 
 kotlin {
     androidTarget {
@@ -31,7 +31,7 @@ kotlin {
         it.binaries.framework {
             baseName = xcframeworkName
 
-            binaryOption("bundleId", "io.github.marcelo.${xcframeworkName}")
+            binaryOption("bundleId", "com.havan.paladinos.business-logic.kmp.${xcframeworkName}")
             xcf.add(this)
             isStatic = true
         }
@@ -86,9 +86,10 @@ mavenPublishing {
 
     pom {
         name = "Hvn Library KMP"
-        description = "Biblioteca Kotlin Multiplatform para compartilhar lógica de negócios (use cases) entre aplicativos Android e iOS nativos."
+        description =
+            "Biblioteca Kotlin Multiplatform para compartilhar lógica de negócios (use cases) entre aplicativos Android e iOS nativos."
         inceptionYear = "2024"
-        url = "https://github.com/MarceloLuiz12/kmp_library_mlp"
+        url = " https://dev.azure.com/HavanLabs/PALADINOS/_git/havan-paladinos-kmp "
         licenses {
             license {
                 name = "MIT"
@@ -97,13 +98,22 @@ mavenPublishing {
         }
         developers {
             developer {
-                id = "marceloluiz12"
                 name = "Marcelo Luiz Pinheiro"
-                email = "marceloluizpinheiro17@gmail.com"
+                email = "marcelo.pinheiro@havan.com"
+            }
+
+            developer {
+                name = "Matheus de Araújo Leite"
+                email = "matheus.a@havan.com.br"
+            }
+
+            developer {
+                name = "Ana Cristina Pereira"
+                email = "ana.cristinap@havan.com.br"
             }
         }
         scm {
-            url = "https://github.com/MarceloLuiz12/kmp_library_mlp"
+            url = " https://dev.azure.com/HavanLabs/PALADINOS/_git/havan-paladinos-kmp "
         }
     }
 }
