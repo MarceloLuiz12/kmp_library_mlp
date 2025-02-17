@@ -2,13 +2,13 @@ package domain.usecases
 
 import domain.core.UseCase
 import domain.models.ProductResponseWrapper
-import domain.repositories.ProductInterface
+import domain.repositories.ProductRateRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 
 class GetProductRatingUseCase(
     scope: CoroutineScope,
-    private val repository: ProductInterface
+    private val repository: ProductRateRepository
 ) : UseCase<ProductResponseWrapper, GetProductRatingUseCase.Params>(scope = scope) {
     override fun run(params: Params?): Flow<ProductResponseWrapper> = repository.getProductRating(
         page = params?.page ?: 0,
