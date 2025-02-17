@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "com.havan.paladinos.business-logic.kmp"
-version = "1.0.5"
+version = "1.0.0"
 
 kotlin {
     androidTarget {
